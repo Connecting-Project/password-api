@@ -1,0 +1,15 @@
+version: '3'
+services:
+  front:
+    image: jusk2/hawaiian-password-web
+    hostname: password-web
+    restart: always
+    ports:
+      - "8001:5000"
+      
+  api:
+    image: jusk2/hawaiian-password-api
+    hostname: password-api
+    restart: always
+    ports:
+      - "8000:8080"
