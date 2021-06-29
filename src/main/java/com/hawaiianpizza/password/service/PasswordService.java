@@ -1,8 +1,8 @@
-package com.hawaiianpizza.password.Service;
+package com.hawaiianpizza.password.service;
 
 import org.springframework.stereotype.Service;
 
-import com.hawaiianpizza.password.Model.Standard;
+import com.hawaiianpizza.password.model.Standard;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -36,6 +36,6 @@ public class PasswordService {
 			}
 		}
 		return ret.toString();
-	};
+	}
 
 }

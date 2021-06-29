@@ -1,4 +1,4 @@
-package com.hawaiianpizza.password.Controller;
+package com.hawaiianpizza.password.controller;
 
 
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hawaiianpizza.password.Model.Standard;
-import com.hawaiianpizza.password.Service.PasswordService;
+import com.hawaiianpizza.password.model.Standard;
+import com.hawaiianpizza.password.service.PasswordService;
 
 @CrossOrigin(origins = "https://password.hawaiian-pizza.space/")
 @RestController
