@@ -27,7 +27,7 @@ public class PasswordController {
 	}
 
 	@PostMapping(value = "/generate")
-	public ResponseEntity<?> generate(@RequestBody Standard standard) {
+	public ResponseEntity<String> generate(@RequestBody Standard standard) {
 		logger.info("generate start");
 		try {
 			String ret = passwordService.generator(standard);
