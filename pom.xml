@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hawaiianpizza</groupId>
-	<artifactId>password</artifactId>
+	<artifactId>password-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>password</name>
-	<description>password project for Spring Boot</description>
+	<name>password-api</name>
+	<description>password-api project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>

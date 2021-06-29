@@ -4,6 +4,9 @@ import org.springframework.stereotype.Service;
 
 import com.hawaiianpizza.password.Model.Standard;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+
 @Service
 public class PasswordService {
 
@@ -25,7 +28,12 @@ public class PasswordService {
 		if(stan.isBoolUpper())
 			total+=upper;
 		for(int i = 0;i<stan.getPasswordLength();i++) {
-			ret.append(total.charAt((int) (Math.random() * total.length())));
+			try {
+				SecureRandom ran = SecureRandom.getInstance("SHA1PRNG");
+				ret.append(total.charAt(ran.nextInt(total.length())));
+			} catch (NoSuchAlgorithmException e) {
+				e.printStackTrace();
+			}
 		}
 		return ret.toString();
 	};
