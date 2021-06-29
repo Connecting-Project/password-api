@@ -1,4 +1,4 @@
-package com.hawaiianpizza.password.Model;
+package com.hawaiianpizza.password.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
